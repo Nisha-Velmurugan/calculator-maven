@@ -1,12 +1,12 @@
 pipeline {
     agent any
-
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Nisha-Velmurugan/calculator-maven.git'
+                git branch: 'main', url: 'https://github.com/Nisha-Velmurugan/calculator-maven.git'
             }
         }
+
 
         stage('Clean') {
             steps {
